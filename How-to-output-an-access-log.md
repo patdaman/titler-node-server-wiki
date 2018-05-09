@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 To output traditional web server access logs, use `--log.format` with any value (typically 'combined', 'dev' or 'tiny'). The format value supplied is passed directly to [morgan](https://github.com/expressjs/morgan).
 

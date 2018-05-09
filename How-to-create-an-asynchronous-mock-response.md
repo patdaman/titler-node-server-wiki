@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 To make a `response` asynchronous, use a response function which returns a `Promise` which resolves when complete.
 

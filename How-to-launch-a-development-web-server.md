@@ -1,3 +1,5 @@
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
+
 This example will serve your current project as a static web site.
 
 1. Navigate into to your project
@@ -37,7 +39,7 @@ This example will serve your current project as a static web site.
 
   ```js
     authUser: "developer",
-    authPass: "development:,
+    authPass: "development",
   ```
 <!-- $ ws --auth.user lloyd --auth.pass secret
   Serving at http://newbluefx.local:8000, http://127.0.0.1:8000, http://192.168.0.100:8000 -->

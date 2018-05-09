@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 HTTP Basic Authentication is provided by the `basic-auth` module which is part of the [built-in stack](Using-middleware#built-in-middleware-stack.md).
 

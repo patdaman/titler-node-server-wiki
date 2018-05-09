@@ -1,3 +1,5 @@
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
+
 Config files are plain Javascript, giving you freedom to share and merge options however you like.
 
 The config file accepts all options listed by `ws --help` except they should be written in "camel case". For example, the `--no-conditional-get` CLI option should be written `noConditionalGet` in the config file, `--cors.allow-methods` becomes `corsAllowMethods` etc.
@@ -38,7 +40,7 @@ const options = Object.assign({}, sharedOptions, {
 
 module.exports = options
 ```
-
+<!-- 
 To inspect the active config (merged from all sources) at any point, run:
 ```sh
 $ ws --config
@@ -48,4 +50,4 @@ To use a config file other than the default, run:
 
 ```
 $ ws --config-file something.js
-```
+``` -->

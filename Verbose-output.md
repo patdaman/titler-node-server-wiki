@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 Setting the `--verbose` flag outputs a highly verbose JSON stream containing debug information. It is intended to aid debugging and as a datasource for custom views.
 

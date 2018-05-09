@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 Each incoming request passes through the middleware stack configured for your server. If the built-in stack (described in the table below) does not meet your needs you can supply your own using `--stack`.
 

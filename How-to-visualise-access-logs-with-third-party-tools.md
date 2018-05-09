@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 ## Goaccess
 To get live statistics in [goaccess](http://goaccess.io/), first create this config file at `~/.goaccessrc`:

@@ -1,3 +1,5 @@
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
+
 If you have an HTTPS server running at `https://127.0.0.1:8000` then any HTTP requests to `http://127.0.0.1:8000` will fail (as HTTP is a different protocol).
 
 HTTP and HTTPS are two separate services. To respond to both HTTP and HTTPS requests both HTTP and HTTPS servers should be launched.

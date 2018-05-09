@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 Some modern techs (HTTP2, ServiceWorker, `MediaDevices.getUserMedia()` etc.) *must* be served from a secure origin (HTTPS). To launch an HTTPS server you must supply one of the following: 
 

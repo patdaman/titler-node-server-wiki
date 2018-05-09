@@ -1,3 +1,5 @@
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
+
 <a name="module_titler-node-server"></a>
 
 ## titler-node-server
@@ -7,7 +9,7 @@
 const TitlerNodeServer = require('titler-node-server')
 const titlerNodeServer = new TitlerNodeServer()
 const server = titlerNodeServer.listen({
-  port: 8050,
+  port: 8000,
   https: true,
   directory: 'src',
   spa: 'index.html',

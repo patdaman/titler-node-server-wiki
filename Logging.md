@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 By default, titler-node-server offers a dynamic web console view. To output traditional web server access logs, use `--log.format`:
 

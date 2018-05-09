@@ -1,8 +1,8 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 If your app needs a bi-directional communication channel with the server then WebSockets are the way forward.
 
-## **By default this module is configured to connect to Titler Live Server**
+<!-- ## ***By default this module is configured to connect to Titler Live Server*** -->
 
 **Remember: Websockets are not compatible with HTTP2 therefore will not work with the `--http2` flag.**
 

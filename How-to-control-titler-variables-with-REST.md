@@ -1,12 +1,23 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 ## Titler Live REST Connection
 
+Full CRUD is available for Titler Live.
+
+_No alerts are sent to client from server via REST, must make GET call for updated value or use Websockets_
+
 ```js
-        route: "/variables/:id",
+        route: "/variables/",
         responses: [
           /* no support for POST on this route */
-          { request: { method: 'POST' }, response: { status: 400 } },
+          { request: { method: 'POST', is: 'json' },             
+            response: (ctx, id) => {
+              const updatedVariable = ctx.request.body
+              const existingVariableIndex = users.findIndex(variable => variable.id === Number(id))
+              variables.splice(existingVariableIndex, 1, updatedVariable)
+              ctx.status = 204; 
+            } 
+          },
 
           /* for GET requests, return all variables */
           {
@@ -15,6 +26,11 @@
               ctx.body = variables;
             }
           },
+
+        route: "/variables/:id",
+        responses: [
+          /* no support for POST on this route */
+          { request: { method: 'POST' }, response: { status: 400 } },
 
           /* for GET requests, return a particular variable */
           {

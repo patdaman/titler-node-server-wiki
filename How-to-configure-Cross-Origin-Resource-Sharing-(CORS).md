@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 By default, the server will accept requests from any origin. To restrict access to a specific origin use `--cors.origin`.
 

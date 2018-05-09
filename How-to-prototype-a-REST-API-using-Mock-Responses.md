@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 This example, a RESTful `/users` API, adds responses handling `PUT`, `DELETE` and `POST`.
 

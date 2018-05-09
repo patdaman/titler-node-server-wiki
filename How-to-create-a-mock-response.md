@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 If you need a server-side resource or service which doesn't yet exist or is out of reach, the goal of mocks is to enable you to quickly create one.
 

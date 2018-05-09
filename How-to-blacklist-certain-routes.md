@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 By default, access to all files is allowed (including dot files). If you prefer to forbid certain routes, pass [express-style](https://expressjs.com/en/guide/routing.html) route expressions to `--blacklist`:
 

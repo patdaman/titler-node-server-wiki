@@ -1,4 +1,4 @@
-![NewBlueFX](img/NewBlueFX_logo.png)
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
 
 ## Titler Live Websocket Connection
 
@@ -17,3 +17,14 @@ window.onload = function () {
 
 Returned will be a JSON object represented as a string (potentially nested) with variable key / value pairs:
 
+
+
+To initialize a clock:
+```js
+    .initializeClock(INPUT_NAME, Action, Name, Direction, Format, Value);
+```
+
+Example Function:
+```js
+    .initializeClock(INPUT_NAME, "update", "Clock 1", countdownCheck.checked ? "countdown" : "countup", "MM:ss", parseInt(clockBox.value) * 1000);
+```
