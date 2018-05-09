@@ -1,3 +1,5 @@
+[![NewBlueFX](img/NewBlueFX_logo.png)](Home.md)
+
 titler-node-server uses `Koa` as its middleware engine so first I recommend reading the [Koa guide to writing middleware](https://github.com/koajs/koa/blob/master/docs/guide.md).
 
 ## Create a middleware module
@@ -20,13 +22,17 @@ module.exports = MiddlewareBase => class Example extends MiddlewareBase {
 
 Launch your stack with the following command. By setting `--stack` you override the [built-in stack](Using-middleware#built-in-middleware-stack.md) with the middleware supplied. 
 
+config.js
+```js
+  stack: "mw-example.js",
 ```
+<!-- ```sh
 $ ws --stack mw-example.js
 Serving at http://newbluefx.local:8100, http://127.0.0.1:8100, http://192.168.0.100:8100
-```
+``` -->
 
 Test you get the expected response.
-
+TODO: Add instructions with Postman for Windows
 ```
 $ curl http://127.0.0.1:8100
 Hello
@@ -36,26 +42,12 @@ Hello
 
 You can parameterise middleware by adding a `optionDefinitions` method which should return one or more `option definitions`. This example defines an option called `message` which will be a string.
 
-```js
-module.exports = MiddlewareBase => class Example extends MiddlewareBase {
-  optionDefinitions () {
-    return [
-      { name: 'message', type: String, description: 'A message to print.'}
-    ]
-  }
-  middleware (options) {
-    return (ctx, next) => {
-      ctx.response.body = 'Hello'
-    }
-  }
-}
-```
-
+<!-- 
 If you view the `ws` usage guide you will now see your middleware and middleware options listed.
 
 ```
 $ ws --stack mw-example.js --help
-```
+``` -->
 
 ```js
 module.exports = MiddlewareBase => class Example extends MiddlewareBase {
@@ -74,13 +66,18 @@ module.exports = MiddlewareBase => class Example extends MiddlewareBase {
 
 Now, we can configure our middleware to respond with a different message. 
 
+```js
+  stack: "mw-example.js",
+  message: "🦆 🦆 🦆",
 ```
+
+<!-- ```
 $ ws --stack mw-example.js --message "🦆 🦆 🦆"
 Serving at http://newbluefx.local:8100, http://127.0.0.1:8100, http://192.168.0.100:8100
-```
+``` -->
 
 Test we receive the correct response.
-
+TODO: Instructions with Postman for Windows
 ```
 $ curl http://127.0.0.1:8100
 🦆 🦆 🦆
