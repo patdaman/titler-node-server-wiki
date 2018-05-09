@@ -11,14 +11,27 @@ window.onload = function () {
         socket.send('getVars');
     });
     socket.addEventListener('message', function (event) {
+        // Do work here...
         console.log('Message from server ', JSON.stringify(event.data));
     });
 ```
-
 Returned will be a JSON object represented as a string (potentially nested) with variable key / value pairs:
 
+## Set Variables
+```js
+    // ...
+    var action = "update";
+    var variables = { "Home Score": homeScore, "Visitor Score": visitorScore };
+    var variableUpdate = { 
+        "action": action,
+        "input_name": INPUT_NAME,
+        "variables": variables,
+    };
 
+    socket.send(JSON.Stringify(variableUpdate));
+```
 
+## Clocks
 To initialize a clock:
 ```js
     .initializeClock(INPUT_NAME, Action, Name, Direction, Format, Value);
