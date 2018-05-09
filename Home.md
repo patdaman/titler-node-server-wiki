@@ -1,9 +1,17 @@
-## The Basics
+![NewBlueFX](img/NewBlueFX_logo.png)
 
-* [Launch a simple HTTP development web server](How-to-launch-a-development-web-server.md.md)
-* [Launch a secure HTTPS development web server](How-to-launch-a-secure-titler-node-server-(HTTPS.md).md.md)
-    * [How to get the "green padlock" using the built-in certificate](How-to-get-the-%22green-padlock%22-using-the-built-in-certificate.md)
-    * [How to get the "green padlock" using a new self-signed certificate](How-to-get-the-%22green-padlock%22-with-a-new-self-signed-certificate.md)
+## Titler Live Connection
+
+* [Use Websockets in your web page to set and control variables](How-to-control-titler-variables-with-websockets.md)
+* [Use REST API in your web page to set and control variables](How-to-control-titler-variables-with-REST.md)
+* [Use Titler Live commands from your custom controller](How-to-use-titler-commands.md)
+* [Example JSON objects used by Titler Live](titler-live-json-objects.md)
+* [Example command usage for Titler Live](titler-live-send-command.md)
+
+## Web Server Basics
+
+* [Launch a simple HTTP development web server](How-to-launch-a-development-web-server.md)
+* [Launch a secure HTTPS development web server](How-to-launch-a-secure-titler-node-server-HTTPS.md)
     * [How to proxy all HTTP requests to HTTPS](How-to-proxy-all-HTTP-requests-to-HTTPS.md)
 * [How to launch a secure HTTP2 development web server](How-to-launch-a-HTTP2-development-web-server.md)
 * [Configuration Management](Configuration-Management.md)

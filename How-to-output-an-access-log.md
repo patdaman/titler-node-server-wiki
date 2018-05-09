@@ -1,8 +1,15 @@
+![NewBlueFX](img/NewBlueFX_logo.png)
+
 To output traditional web server access logs, use `--log.format` with any value (typically 'combined', 'dev' or 'tiny'). The format value supplied is passed directly to [morgan](https://github.com/expressjs/morgan).
 
-```sh
+```js
+    logFormat: "tiny",
+```
+<!-- ```sh
 $ ws --log.format tiny
 Serving at http://newbluefx.local:8010, http://127.0.0.1:8010, http://192.168.0.100:8010
+``` -->
+```sh
 GET / 304 - - 18.937 ms
 GET /index.css 304 - - 24.106 ms
 GET /css/font-awesome.min.css 304 - - 17.563 ms

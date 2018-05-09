@@ -1,3 +1,5 @@
+![NewBlueFX](img/NewBlueFX_logo.png)
+
 This example, a RESTful `/users` API, adds responses handling `PUT`, `DELETE` and `POST`.
 
 ```js
@@ -40,14 +42,22 @@ module.exports = MockBase => class MockUsers extends MockBase {
 }
 ```
 
-Launch `ws` passing in your mocks module:
+Incluide your mocks module in the stack:
+
+```js
+  mocks: "example-mocks.js",
+```
+
+<!-- Launch `ws` passing in your mocks module:
 
 ```sh
 $ ws --mocks example-mocks.js
 Serving at http://newbluefx.local:8000, http://127.0.0.1:8000, http://192.168.0.100:8000
-```
+``` -->
 
 Test your mock responses. A `POST` request should return a `201` with an empty body and the `Location` of the new resource.
+
+TODO: Directions for using Postman in Windows
 
 ```sh
 $ curl http://127.0.0.1:8000/users -H 'Content-type: application/json' -d '{ "name": "Anthony" }' -i

@@ -1,3 +1,5 @@
+![NewBlueFX](img/NewBlueFX_logo.png)
+
 To make a `response` asynchronous, use a response function which returns a `Promise` which resolves when complete.
 
 ```js

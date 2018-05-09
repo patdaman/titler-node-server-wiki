@@ -1,9 +1,16 @@
-Serving a Single Page Application (an app with client-side routing, e.g. a React or Angular app) is as trivial as specifying the name of your single page:
+![NewBlueFX](img/NewBlueFX_logo.png)
 
-```sh
+
+### Serving a Single Page Application (an app with client-side routing, e.g. a React or Angular app) is as trivial as specifying the name of your single page:
+
+```js
+    directory: "src/controls/",  <-- not required if located in root dir
+    spa: "index.html",
+```
+<!-- ```sh
 $ ws --spa index.html
 Serving at http://newbluefx.local:8000, http://127.0.0.1:8000, http://192.168.0.100:8000
-```
+``` -->
 
 By default, requests for typical SPA paths (e.g. `/user/1`, `/login`) return `404 Not Found` as a file at that location does not exist. By marking `index.html` as the SPA you create this rule:
 
@@ -15,6 +22,12 @@ By default, any path containing a `.` (full stop) is considered a static file. T
 
 For example, this command will treat only files ending with `.json` as a static resource, otherwise the SPA will be returned.
 
+```js
+    directory: "src/controls/",
+    spa: "index.html",
+    spaAssetTest: "\.json$"
 ```
-$ ws --spa index.html --spa.asset-test '\.json$'
-```
+<!-- or
+```sh
+    $ ws --spa index.html
+``` -->

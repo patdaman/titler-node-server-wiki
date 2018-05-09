@@ -1,4 +1,6 @@
-## Local targets
+![NewBlueFX](img/NewBlueFX_logo.png)
+
+<!-- ## Local targets
 
 Your application requested `/css/style.css` but you'd like to serve `/css/new-theme.css`. The syntax is:
 
@@ -36,7 +38,7 @@ $ ws --rewrite '/npm/* -> http://registry.npmjs.org/$1'
 Map local requests for repo data to the Github API:
 ```sh
 $ ws --rewrite '/:user/repos/:name -> https://api.github.com/repos/:user/:name'
-```
+``` -->
 
 ## Config
 

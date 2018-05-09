@@ -1,3 +1,5 @@
+![NewBlueFX](img/NewBlueFX_logo.png)
+
 Creating an [SSE](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events) service with a mock response is straight forward.
 
 This example responds to any request for `/sse` with a persistent SSE stream. The body of the response (`ctx.body`) is set to a stream which is fed a random number every ten seconds. If the client disconnects, the `interval` is cleared and the SSE stream ended.
@@ -42,9 +44,13 @@ module.exports = MockBase => class SSE extends MockBase {
 
 Save the above mock module as `sse-mock.js` then launch a server.
 
+```js
+  mocks: "sse-mock.js",
 ```
+
+<!-- ```
 $ ws --mocks sse-mock.js
-```
+``` -->
 
 Try this simple client example.
 

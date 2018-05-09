@@ -1,12 +1,18 @@
+![NewBlueFX](img/NewBlueFX_logo.png)
+
 If you need a server-side resource or service which doesn't yet exist or is out of reach, the goal of mocks is to enable you to quickly create one.
 
 ## Consuming mock modules
 
 If you have `mock-response` present in your stack (included by default) you will have the option to pass one or more mock module paths to `--mocks`. 
 
+```js
+  mocks: "my-mocks-module.js"
 ```
+
+<!-- ```
 $ ws --mocks my-mocks-module.js
-```
+``` -->
 
 ## Creating a mock module
 
@@ -117,6 +123,8 @@ module.exports = MockBase => class MyMockModule extends MockBase {
   }
 }
 ```
+
+TODO: Write instructions using Postman for Windows
 
 ...this request would receive a `404 Not Found` (as `accept` is not `json`):
 
