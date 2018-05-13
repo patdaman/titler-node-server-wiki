@@ -4,39 +4,29 @@
 
 XML Command Object
 ```json
-{ "command": "animateIn",
-    "attributes": [
-        "channel": "-1",
-        "input": "INPUT_NAME",
-        "attribute1": "attribute1Value",
-        "attribute2": "attribute2Value",
-        "attribute3": "attribute3Value",
-    ],
+{ 
+    "input": "Tennis",
+    "action": "AnimateIn",
+    "title": "Scorebug",
 }
 ```
 
 Variable Object
 ```json
-{ "command": "animateIn",
-    "attributes": [
-        "channel": "-1",
-        "input": "INPUT_NAME",
-        "attribute1": "attribute1Value",
-        "attribute2": "attribute2Value",
-        "attribute3": "attribute3Value",
-    ],
+{ 
+    "input": "Tennis",
+    "action": "setvars",
+    "title": "all",
+    "variables": {
+      "Home Score": 0, 
+      "Visitor Score": 7,
+      },
 }
 ```
 
 Clock Object
 ```json
-{ "command": "animateIn",
-    "attributes": [
-        "channel": "-1",
-        "input": "INPUT_NAME",
-        "attribute1": "attribute1Value",
-        "attribute2": "attribute2Value",
-        "attribute3": "attribute3Value",
-    ],
+{ 
+    ...
 }
 ```

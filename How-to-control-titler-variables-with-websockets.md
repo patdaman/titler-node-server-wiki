@@ -19,16 +19,29 @@ Returned will be a JSON object represented as a string (potentially nested) with
 
 ## Set Variables
 ```js
-    // ...
-    var action = "update";
-    var variables = { "Home Score": homeScore, "Visitor Score": visitorScore };
-    var variableUpdate = { 
-        "action": action,
-        "input_name": INPUT_NAME,
-        "variables": variables,
+    // Function to include in control:
+    setVariables = function(variables) {
+        var message = { "InputName": INPUT_NAME, "Action": "update", "Title": "all", variables };
+        socket.send(JSON.stringify(message));
     };
 
-    socket.send(JSON.Stringify(variableUpdate));
+    // Example: 
+    var variables = { "Home Score": homeScore, "Visitor Score": visitorScore };
+    setVariables(variables};
+```
+## Send XML Command
+```js
+    // Function to include in control:
+    sendCommand = function(INPUT_NAME, action, title, variables){
+        var message = { "InputName": INPUT_NAME, "Action": action, "Title": "", variables };
+        socket.send(JSON.stringify(message));
+    };
+
+    // Example: 
+    var action = "AnimateIn";
+    var title = "Scorebug";
+    var variables = { "Home Score": homeScore, "Visitor Score": visitorScore };
+    sendCommand(action, title, variables};
 ```
 
 ## Clocks
